@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS/payment_page.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="i">
+    <script src="https://kit.fontawesome.com/6483843a61.js" crossorigin="anonymous"></script>
+  
+
+</head>
+
+<body>
+       <header>
+        <nav>
+          <div class="mobile-navbar ">
+            <div class="mobile-navbar__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tabler-icon tabler-icon-x">
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+              </svg>
+            </div>
+            <ul class="mobile-navbar__links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about"><fontsninja-text id="fontsninja-text-12"
+                    class="fontsninja-family-1933">About</fontsninja-text></a></li>
+              <li><a href="/models"><fontsninja-text id="fontsninja-text-14"
+                    class="fontsninja-family-1933">Models</fontsninja-text></a></li>
+              <li><a href="/testi"><fontsninja-text id="fontsninja-text-16"
+                    class="fontsninja-family-1933">Testimonials</fontsninja-text></a></li>
+              <li><a href="/team"><fontsninja-text id="fontsninja-text-18" class="fontsninja-family-1933">Our
+                    Team</fontsninja-text></a></li>
+              <li><a href="/contact"><fontsninja-text id="fontsninja-text-20"
+                    class="fontsninja-family-1933">Contact</fontsninja-text></a></li>
+            </ul>
+          </div>
+          <div class="navbar">
+            <div class="navbar-img">
+              <a href="#"><img src="images/logo/logo (4).png" alt="" /></a>
+            </div>
+            <ul class="navbar-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/service">Service</a></li>
+              <li><a href="/team">Our Team</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+    
+            <div class="navbar-buttons">
+              
+            </div>
+            <div class="mobile-hamb">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tabler-icon tabler-icon-menu-2">
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+              </svg>
+            </div>
+          </div>
+        </nav>
+      </header>
+<br>
+
+    <div class="payment-panel">
+        <div class="panel-body">
+            <div class="title">
+                <span class="h2">Confirm and Pay</span><br>
+                <span>Pleace make the payment and enjoy all the features and
+                    benefits.</span>
+            </div>
+            <div class="payment-method">
+                <div class="card-item">
+                    <label for="card" class="method card">
+                        <div class="card-logos">
+                            <img src="../icons/payment/visa.png" alt="visa" />
+                            <img src="../icons/payment/mastercard.png" alt="mastercard" />
+                        </div>
+
+                        <div class="radio-input">
+                            <input id="card" type="radio" name="payment" required>
+                            Pay <!--amount--> with credit card
+                        </div>
+                    </label>
+                </div>
+                <div class="card-item">
+                    <label for="card" class="method paypal">
+                        <img src="../icons/payment/pngegg (1).png" alt="paypal" />
+                        <div class="radio-input">
+                            <input id="paypal" type="radio" name="payment" required>
+                            Pay <!--amount--> with PayPal
+                        </div>
+                    </label>
+                </div>
+                <div class="card-item">
+                    <label for="card" class="method debit">
+                        <img src="../icons/payment/credit_card.png" alt="debit" />
+                        <div class="radio-input">
+                            <input id="paypal" type="radio" name="payment" required>
+                            Pay <!--amount--> with debit card
+                        </div>
+                    </label>
+                </div>
+                <div class="card-item">
+                    <label for="card" class="method UPI ">
+                        <img src="../icons/payment/UPI-logo.png" alt="debit" />
+                        <div class="radio-input">
+                            <input id="paypal" type="radio" name="payment" required>
+                            Pay <!--amount--> with UPI
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="input-fields">
+                <div class="column-1">
+                    <label for="cardholder">Cardholder's Name</label>
+                    <input type="text" id="cardholder" />
+                    <div class="card-number">
+                        <label for="card-number">Card Number</label>
+                        <input type="password" id="car-dnumber" required />
+                    </div>
+
+                    <div class="small-inputs">
+                        <div>
+                            <label for="date">Valid thru</label>
+                            <input type="text" id="date" placeholder="MM / YY" required />
+                        </div>
+
+                        <div>
+                            <label for="verification">CVV / CVC *</label>
+                            <input type="password" id="verification" required />
+                        </div>
+                    </div>
+                    <span class=" responsive-info">*CVV or CVC is the card security code, unique three digits number on
+                        the back of your card separate from its number.</span>
+                </div>
+                <div class="column-2">
+                    <label for="cardnumber">Card Number</label>
+                    <input type="password" id="cardnumber" required />
+                    <span class="info">*CVV or CVC is the card security code, unique three digits number on the back of
+                     your card separate from its number.</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button  class="btn next-btn"><a href="./../pages/login_registration/daily.html">Back</a></button>
+            <button  class="btn next-btn"><a href="./../pages/login_registration/otp_verification.html">Get OTP</a></button>
+            <!-- <input type="submit" class="btn next-btn" value="Get OTP"></input> -->
+        </div>
+    </div>
+
+</body>
+</html>

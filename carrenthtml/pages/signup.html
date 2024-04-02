@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./../css/login_register.css">
+    <link rel="stylesheet" href="./../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+  
+    <link rel="icon" href="i">
+    <link rel="stylesheet" href="../../css/footer.css"/>
+  
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="mobile-navbar ">
+            <div class="mobile-navbar__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tabler-icon tabler-icon-x">
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+              </svg>
+            </div>
+            <ul class="mobile-navbar__links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about"><fontsninja-text id="fontsninja-text-12"
+                    class="fontsninja-family-1933">About</fontsninja-text></a></li>
+              <li><a href="/models"><fontsninja-text id="fontsninja-text-14"
+                    class="fontsninja-family-1933">Models</fontsninja-text></a></li>
+              <li><a href="/testi"><fontsninja-text id="fontsninja-text-16"
+                    class="fontsninja-family-1933">Testimonials</fontsninja-text></a></li>
+              <li><a href="/team"><fontsninja-text id="fontsninja-text-18" class="fontsninja-family-1933">Our
+                    Team</fontsninja-text></a></li>
+              <li><a href="/contact"><fontsninja-text id="fontsninja-text-20"
+                    class="fontsninja-family-1933">Contact</fontsninja-text></a></li>
+            </ul>
+          </div>
+          <div class="navbar">
+            <div class="navbar-img">
+              <a href="#"><img src="images/logo/logo (4).png" alt="" /></a>
+            </div>
+            <ul class="navbar-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/service">Service</a></li>
+              <li><a href="/team">Our Team</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+    
+            <div class="navbar-buttons">
+              <a class="navbar-buttons-sign-in" href="/login">Sign-In</a>
+              <a class="navbar-buttons-register" href="#">Register</a>
+            </div>
+            <div class="mobile-hamb">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tabler-icon tabler-icon-menu-2">
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+              </svg>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+        <div class="form-container  signup-container">
+            <div class="cover">
+                <div class="front">
+                    <img src="./../images/login_page/Mobile login.gif" alt="cover-image" />
+                </div>
+            </div>
+            <div class="forms">
+                <div class="form-content">
+                    <div class="signup-form">
+                        <div class="title">Register</div>
+                        <form action="#">
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="User_name" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" name="Mobile" placeholder="Enter your phone no." required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-birthday-cake"></i>
+                                    <input type="date" name="DOB" placeholder="Enter your DOB" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" name="password" placeholder="Enter your password" required>
+                                </div>
+
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" name="confirm_password" placeholder="Confirm  your password"
+                                    id="confirm_password" required data-match="#password">
+                            </div>
+                            <div class="text text-accept-term">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                By clicking here, I state that I have read and understood the terms and conditions.<span
+                                    style="color: red;">*</span>
+                            </div>
+                            <div class="button input-box">
+                                <input class="signup" type="submit" value="Register">
+                            </div>
+                            <div class="text sign-up-text">
+                                Already have an
+                                account?
+                                <label><a href="/login"><b>Login now!</b></a></label>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <footer>
+        <div class="container">
+          <div class="footer-content">
+            <ul class="footer-content-1">
+              <li><span>Rent it, Out</li>
+              <li>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your
+                needs.</li>
+              <li><a href="#"><i class="fa-solid fa-phone"></i> &nbsp; 0120 253 5266</a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; rentitout@gmail.com</a></li>
+              <li><a href="#" style="font-size: 14px;">Design by <b>S.T.A.A.S</b></a></li>
+            </ul>
+            <ul class="footer-content-2">
+              <li>Quick Links</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/service">Service</a></li>
+              <li><a href="/team">OurTeam</li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+            <ul class="footer-content-2">
+              <li>WORKING HOURS</li>
+              <li>Mon - Fri: 9:00AM - 9:00PM</li>
+              <li>Sat: 9:00AM - 19:00PM</li>
+              <li>Sun: Closed</li>
+            </ul>
+            <ul class="footer-content-2">
+              <li>SUBSCRIPTION</li>
+              <li>
+                <p>Subscribe your Email address for latest news &amp; updates.</p>
+              </li>
+              <li><input type="email" placeholder="Enter Email Address"></li>
+              <li><button class="submit-email">Submit</button></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>

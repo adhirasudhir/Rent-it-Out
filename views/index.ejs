@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Car Rental</h1>
+        <p>Welcome to our car rental service. Rent a car hassle-free!</p>
+    </header>
+    <main>
+        <form action="/rent" method="POST">
+            <label for="carType">Car Type:</label>
+            <select id="carType" name="carType" required>
+                <option value="">Select Car Type</option>
+                <option value="SUV">SUV</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Convertible">Convertible</option>
+                <option value="Coupe">Coupe</option>
+                <option value="Minivan">Minivan</option>
+                <option value="Pickup Truck">Pickup Truck</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Electric">Electric</option>
+                <option value="Hybrid">Hybrid</option>
+            </select>
+            
+            <label for="rentalDays">Rental Days:</label>
+            <input type="number" id="rentalDays" name="rentalDays" required>
+
+            <label for="pickupDate">Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+
+            <label for="additionalRequests">Additional Requests:</label>
+            <textarea id="additionalRequests" name="additionalRequests" rows="4" cols="50"></textarea>
+
+            <button type="submit">Rent Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>Contact us at rentacar@example.com for any inquiries.</p>
+    </footer>
+</body>
+</html>
